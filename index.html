@@ -14,19 +14,22 @@
   </head>
   <body>
     <div class="main-container">
-      <h1 style="margin-top: 0; margin-left: 10px;">CPaint</h1>
+      <h1
+        style="
+          margin-top: 0;
+          margin-left: 10px;
+          -webkit-text-stroke: 1px white;
+        "
+        id="tow"
+      >
+        CPaint
+      </h1>
       <div class="main1">
+        <div id="ncanvas"></div>
         <canvas id="canvas" class="main-canvas"></canvas>
         <div style="margin-left: 10px; border: 1px solid white;">
-          <h3 style="padding: 10px; margin: 0;">Colors</h3>
-          <div
-            style="
-              display: flex;
-              max-width: 111px;
-              flex-wrap: wrap;
-              margin: 0px;
-            "
-          >
+          <h3 class="h31">Colors</h3>
+          <div class="main2">
             <div class="colors colors-border red" data-color="red"></div>
             <div class="colors colors-border blue" data-color="blue"></div>
             <div class="colors black" data-color="black"></div>
@@ -36,25 +39,31 @@
             <div class="colors colors-border gray" data-color="gray"></div>
             <div class="colors colors-border violet" data-color="violet"></div>
             <div class="colors colors-border brown" data-color="brown"></div>
+            <div class="colors colors-border white" data-color="white"></div>
           </div>
           <hr />
-          <h3 style="padding: 10px; margin: 0;">Tools</h3>
-          <div
-            style="
-              display: flex;
-              max-width: 111px;
-              flex-wrap: wrap;
-              margin: 0px;
-            "
-          >
+          <h3 class="h31">Tools</h3>
+          <div class="main2">
             <div id="eraser" title="Eraser" class="tools fas fa-eraser"></div>
-            <div id="pen" title="Pen" class="tools fas fa-pen"></div>
+            <div id="pen" title="Pen" class="tools fas fa-pen toolcolor"></div>
             <div id="fill" title="Fill" class="tools fas fa-fill-drip"></div>
             <div
               id="clear"
-              title="Clean Canvas"
+              title="Clean Drawing"
               class="tools fas fa-broom"
             ></div>
+            <div
+              id="clearall"
+              title="Clear All"
+              class="tools fas fa-window-close"
+            ></div>
+          </div>
+          <hr />
+          <h3 style="padding: 10px; margin: 0;">Shapes</h3>
+          <div class="main2">
+            <div id="square" title="Square" class="tools fas fa-square"></div>
+            <div id="ellipse" title="Ellipse" class="tools fas fa-egg"></div>
+            <div id="circle" title="Circle" class="tools fas fa-circle"></div>
           </div>
         </div>
       </div>

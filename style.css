@@ -12,8 +12,7 @@ body {
   padding: 0;
 }
 .main-canvas {
-  max-width: 600px;
-  height: 500px;
+  border: 1px solid white;
   background-color: white;
 }
 .main1 {
@@ -75,4 +74,49 @@ body {
 .tools {
   margin: 5px;
   font-size: 25px;
+}
+.toolcolor {
+  color: greenyellow;
+}
+.toold {
+  color: white;
+}
+.main2 {
+  display: flex;
+  max-width: 111px;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.h31 {
+  padding: 10px;
+  margin: 0;
+}
+.shapes {
+  margin: 7px;
+  font-size: 25px;
+}
+.shapes:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.square {
+  border: 1px solid black;
+  position: absolute;
+}
+#ncanvas {
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  margin-right: 120px;
+}
+.rectangle {
+  position: absolute;
+  border: 2px solid;
+}
+.ellipse {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50%;
 }
