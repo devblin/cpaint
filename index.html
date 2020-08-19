@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <title>CPaint</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 style="margin-top: 0; margin-left: 10px;">CPaint</h1>
+      <div class="main1">
+        <canvas id="canvas" class="main-canvas"></canvas>
+        <div style="margin-left: 10px; border: 1px solid white;">
+          <h3 style="padding: 10px; margin: 0;">Colors</h3>
+          <div
+            style="
+              display: flex;
+              max-width: 111px;
+              flex-wrap: wrap;
+              margin: 0px;
+            "
+          >
+            <div class="colors colors-border red" data-color="red"></div>
+            <div class="colors colors-border blue" data-color="blue"></div>
+            <div class="colors black" data-color="black"></div>
+            <div class="colors colors-border green" data-color="green"></div>
+            <div class="colors colors-border yellow" data-color="yellow"></div>
+            <div class="colors colors-border orange" data-color="orange"></div>
+            <div class="colors colors-border gray" data-color="gray"></div>
+            <div class="colors colors-border violet" data-color="violet"></div>
+            <div class="colors colors-border brown" data-color="brown"></div>
+          </div>
+          <hr />
+          <h3 style="padding: 10px; margin: 0;">Tools</h3>
+          <div
+            style="
+              display: flex;
+              max-width: 111px;
+              flex-wrap: wrap;
+              margin: 0px;
+            "
+          >
+            <div id="eraser" title="Eraser" class="tools fas fa-eraser"></div>
+            <div id="pen" title="Pen" class="tools fas fa-pen"></div>
+            <div id="fill" title="Fill" class="tools fas fa-fill-drip"></div>
+            <div
+              id="clear"
+              title="Clean Canvas"
+              class="tools fas fa-broom"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
